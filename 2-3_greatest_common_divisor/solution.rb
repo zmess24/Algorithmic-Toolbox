@@ -2,8 +2,8 @@
 
 def gcd(a, b)
     # Calculate Remainder (a`)
-    # remainder = a % b
-    # remainder === 0 ? b : gcd(b, remainder)
+    remainder = a % b
+    remainder === 0 ? b : gcd(b, remainder)
 end
 
 File.open('dataset.txt', 'r') do |f|
